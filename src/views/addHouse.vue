@@ -18,15 +18,15 @@
     <ul class="case-info">
       <li>
         <h5>病例史</h5>
-        <textarea autocomplete="off" autocapitalize="off" autocorrect="off"></textarea>
+        <textarea autocomplete="off" v-model="pMH" autocapitalize="off" autocorrect="off"></textarea>
       </li>
       <li>
         <h5>既往史</h5>
-        <textarea autocomplete="off" autocapitalize="off" autocorrect="off"></textarea>
+        <textarea autocomplete="off" v-model="pMH" autocapitalize="off" autocorrect="off"></textarea>
       </li>
       <li>
         <h5>家族史</h5>
-        <textarea autocomplete="off" autocapitalize="off" autocorrect="off"></textarea>
+        <textarea autocomplete="off" v-model="pMH" autocapitalize="off" autocorrect="off"></textarea>
       </li>
     </ul>
     <x-button type="primary" @click.native="addHouse">病历上链</x-button>
