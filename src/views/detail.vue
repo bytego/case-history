@@ -46,6 +46,7 @@ export default {
   },
   methods: {
     loadData () {
+      let self = this
       var id = this.$route.query.id
       if (id) {
         this.$vux.loading.show({
@@ -54,7 +55,7 @@ export default {
 
         house.getHouse(id, (rs) => {
           this.house = rs || {}
-          this.$vux.loading.hide({
+          self.$vux.loading.hide({
             text: '加载中'
           })
         })
@@ -68,7 +69,7 @@ export default {
         this.$vux.alert.show({
           text: '数据不存在',
           onHide () {
-            this.$router.push({
+            self.$router.push({
               name: 'search'
             })
           }

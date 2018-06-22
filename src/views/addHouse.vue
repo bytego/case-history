@@ -22,11 +22,11 @@
       </li>
       <li>
         <h5>既往史</h5>
-        <textarea autocomplete="off" v-model="pMH" autocapitalize="off" autocorrect="off"></textarea>
+        <textarea autocomplete="off" v-model="oMH" autocapitalize="off" autocorrect="off"></textarea>
       </li>
       <li>
         <h5>家族史</h5>
-        <textarea autocomplete="off" v-model="pMH" autocapitalize="off" autocorrect="off"></textarea>
+        <textarea autocomplete="off" v-model="fMH" autocapitalize="off" autocorrect="off"></textarea>
       </li>
     </ul>
     <x-button type="primary" @click.native="addHouse">病历上链</x-button>
