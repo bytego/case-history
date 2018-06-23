@@ -129,6 +129,7 @@ export default {
     }
     .case-warp {
       padding: 15px;
+      padding-bottom: 75px;
       li {
         display: flex;
         border: 1px #ddd solid;
@@ -163,8 +164,8 @@ export default {
       font-size: 16px;
     }
     .iconfont {
-      position: absolute;
-      right: 15px;
+      position: fixed;
+      right: 70px;
       bottom: 15px;
       font-size: 24px;
       z-index: 999999;
